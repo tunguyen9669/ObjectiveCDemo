@@ -11,14 +11,14 @@
 
 
 #endif /* JsonModel_h */
-#import <JSONModel.h>
 #import "Foundation/Foundation.h"
+#import <JSONModel/JSONModel.h>
 
 @interface JsonModel : JSONModel
 
-@property (assign, nonatomic) int* id;
-@property (assign, nonatomic) int* userId;
-@property (assign, nonatomic) NSString* title;
-@property (assign, nonatomic) NSString* body;
+@property (assign, nonatomic) NSInteger id;
+@property (assign, nonatomic) NSInteger userId;
+@property (copy, nonatomic) NSString* title;
+@property (copy, nonatomic) NSString* body;
 
 @end

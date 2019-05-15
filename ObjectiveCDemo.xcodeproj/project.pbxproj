@@ -19,6 +19,7 @@
 		8440E356228AA41E00B053E3 /* ObjectiveCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440E355228AA41E00B053E3 /* ObjectiveCDemoUITests.m */; };
 		8440E776228BA6A500B4140C /* ServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440E775228BA6A500B4140C /* ServiceProvider.m */; };
 		8440E77B228BA8EC00B4140C /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440E77A228BA8EC00B4140C /* TestModel.m */; };
+		845AED92228BCDF2005321DB /* JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 845AED91228BCDF2005321DB /* JsonModel.m */; };
 		C76CC9188F202CC6096E6DE6 /* libPods-ObjectiveCDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66280A89CB2E7AB8F11A0BCD /* libPods-ObjectiveCDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		8440E779228BA8D900B4140C /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		8440E77A228BA8EC00B4140C /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		8440E77D228BB68700B4140C /* JsonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonModel.h; sourceTree = "<group>"; };
+		845AED91228BCDF2005321DB /* JsonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonModel.m; sourceTree = "<group>"; };
 		8D2322F4D46C1550F80E5732 /* Pods-ObjectiveCDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCDemoUITests/Pods-ObjectiveCDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C505BE5658877D84FC0C4F64 /* Pods-ObjectiveCDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCDemoTests/Pods-ObjectiveCDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC47BE8E78C3B650EB17BDF3 /* Pods-ObjectiveCDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCDemoTests/Pods-ObjectiveCDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				8440E77D228BB68700B4140C /* JsonModel.h */,
+				845AED91228BCDF2005321DB /* JsonModel.m */,
 			);
 			path = JSONModel;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				8440E776228BA6A500B4140C /* ServiceProvider.m in Sources */,
 				8440E77B228BA8EC00B4140C /* TestModel.m in Sources */,
 				8440E336228AA41C00B053E3 /* ViewController.m in Sources */,
+				845AED92228BCDF2005321DB /* JsonModel.m in Sources */,
 				8440E341228AA41E00B053E3 /* main.m in Sources */,
 				8440E333228AA41C00B053E3 /* AppDelegate.m in Sources */,
 			);

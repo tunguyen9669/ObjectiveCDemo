@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import <JSONModel.h>
 #import "TestModel.h"
+#import "JsonModel.h"
 
 
 @interface ViewController ()
@@ -28,11 +28,25 @@
 //        NSLog(@"Error: %@", error);
 //    }];
     
+    
+    //                    NSString *body = dictionary[@"body"];
+    //                    NSNumber *id = dictionary[@"id"];
+    //                    NSLog(@"Value: %@", body);
+    //                    JsonModel *course = [[JsonModel alloc] initWithString:dictionary error:&error];
+    //                    [courses addObject: course];
+    //                    NSLog(@"Count: %d \n", [courses count]);
     NSDictionary *param = nil;
+    NSMutableArray<JsonModel *> *courses = NSMutableArray.new;
     [TestModel function:param withBlock:^(NSMutableDictionary *array, NSError *error){
         if (!error) {
             if(array != nil){
-                NSLog(@"Mang la: \n", array);
+                for (NSDictionary *dictionary in array) {
+//
+                    NSError *error;
+                    JsonModel *value = [[JsonModel alloc] initWithDictionary:dictionary error:&error];
+                    [courses addObject: value];
+                    NSLog(@"Value: %d", [courses count]);
+                }
             }else {
                 NSLog(@"Du lieu nil");
             }

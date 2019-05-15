@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ServiceProvider.h"
-#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 
 @implementation TestModel : NSObject
 
