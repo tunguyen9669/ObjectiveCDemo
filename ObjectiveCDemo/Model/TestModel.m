@@ -10,11 +10,12 @@
 #import "ServiceProvider.h"
 #import <AFNetworking/AFNetworking.h>
 
+
 @implementation TestModel : NSObject
 
 + (void)function:(id)param withBlock:(void (^)(NSMutableDictionary *, NSError *))block {
-  
-    [[ServiceProvider shared] GET:@"https://jsonplaceholder.typicode.com/posts" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+    AFHTTPSessionManager *manager = [[ServiceProvider shared] manager];
+    [manager GET:@"https://jsonplaceholder.typicode.com/posts" parameters:nil progress:nil	 success:^(NSURLSessionTask *task, id responseObject) {
         if (block) {
             block(responseObject, nil);
         }

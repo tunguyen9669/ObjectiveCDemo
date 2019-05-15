@@ -12,9 +12,10 @@
 
 #endif /* ServiceProvider_h */
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFNetworking.h>
 
 @interface ServiceProvider: NSObject
-
-+ (id)shared;
++ (ServiceProvider*) shared;
+- (AFHTTPSessionManager*) manager;
 
 @end

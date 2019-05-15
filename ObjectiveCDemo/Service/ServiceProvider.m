@@ -11,23 +11,25 @@
 #import <AFNetworking.h>
 @implementation ServiceProvider: NSObject
 
-+ (id)shared {
+
++ (ServiceProvider *)shared {
     static ServiceProvider *shared = nil;
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
-        shared = [self manager];
+        shared = [[ServiceProvider alloc] init];
     });
     return shared;
 }
-
-
-+ (AFHTTPSessionManager *) manager {
+- (AFHTTPSessionManager *)manager {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     NSString *token = [@"Bearer " stringByAppendingString:@"token"];
     [manager.requestSerializer setValue:token forHTTPHeaderField:@"Authorization"];
     return manager;
 }
+
+
+
 
 @end

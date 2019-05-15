@@ -12,6 +12,7 @@
 
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *img;
 
 @end
 
@@ -19,22 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-//  [manager.requestSerializer setValue:@"Bear token" forHTTPHeaderField:@"Authorization"];
-//    [manager GET:@"https://jsonplaceholder.typicode.com/posts" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-//        NSLog(@"JSON: %@", responseObject);
-//    } failure:^(NSURLSessionTask *operation, NSError *error) {
-//        NSLog(@"Error: %@", error);
-//    }];
-    
-    
-    //                    NSString *body = dictionary[@"body"];
-    //                    NSNumber *id = dictionary[@"id"];
-    //                    NSLog(@"Value: %@", body);
-    //                    JsonModel *course = [[JsonModel alloc] initWithString:dictionary error:&error];
-    //                    [courses addObject: course];
-    //                    NSLog(@"Count: %d \n", [courses count]);
+    UIImage *image = [UIImage imageNamed:@"earth"];
+    [self.img setImage:image];
+  
     NSDictionary *param = nil;
     NSMutableArray<JsonModel *> *courses = NSMutableArray.new;
     [TestModel function:param withBlock:^(NSMutableDictionary *array, NSError *error){
@@ -46,6 +34,7 @@
                     JsonModel *value = [[JsonModel alloc] initWithDictionary:dictionary error:&error];
                     [courses addObject: value];
                     NSLog(@"Value: %d", [courses count]);
+                    
                 }
             }else {
                 NSLog(@"Du lieu nil");
