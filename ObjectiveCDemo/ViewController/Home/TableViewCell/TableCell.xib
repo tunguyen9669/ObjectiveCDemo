@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="TableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyK-fl-WZb">
+                        <rect key="frame" x="10" y="7.5" width="300" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML4-VU-xSK">
+                        <rect key="frame" x="10" y="30.5" width="300" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="665-3T-ndg">
+                        <rect key="frame" x="118" y="53.5" width="84.5" height="30"/>
+                        <state key="normal" title="Click">
+                            <color key="titleColor" red="0.0" green="0.66666666669999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2HD-MI-gbI"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="665-3T-ndg" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="5qX-k6-lmY"/>
+                    <constraint firstItem="ML4-VU-xSK" firstAttribute="leading" secondItem="eyK-fl-WZb" secondAttribute="leading" id="HQi-Ha-Noh"/>
+                    <constraint firstItem="eyK-fl-WZb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="JWm-W9-ZRq"/>
+                    <constraint firstAttribute="bottom" secondItem="665-3T-ndg" secondAttribute="bottom" constant="1" id="Loo-Kh-Bg4"/>
+                    <constraint firstItem="ML4-VU-xSK" firstAttribute="top" secondItem="eyK-fl-WZb" secondAttribute="bottom" constant="2" id="Mf0-I7-4hM"/>
+                    <constraint firstItem="eyK-fl-WZb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ok9-ku-ykR"/>
+                    <constraint firstAttribute="trailing" secondItem="eyK-fl-WZb" secondAttribute="trailing" constant="10" id="Soj-Wz-yFM"/>
+                    <constraint firstItem="665-3T-ndg" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="100:100" id="UVH-pE-E7T"/>
+                    <constraint firstItem="665-3T-ndg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="YIa-G9-d6A"/>
+                    <constraint firstItem="ML4-VU-xSK" firstAttribute="trailing" secondItem="eyK-fl-WZb" secondAttribute="trailing" id="eai-cX-bUf"/>
+                    <constraint firstItem="665-3T-ndg" firstAttribute="top" secondItem="ML4-VU-xSK" secondAttribute="bottom" constant="5" id="qgu-DC-BcL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="eyK-fl-WZb" firstAttribute="top" secondItem="aW0-zy-SZf" secondAttribute="top" constant="10" id="Jen-kZ-6UH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btn" destination="665-3T-ndg" id="TWZ-Ab-JVb"/>
+                <outlet property="idLabel" destination="eyK-fl-WZb" id="YFe-J3-Miy"/>
+                <outlet property="titleLabel" destination="ML4-VU-xSK" id="IpU-zS-6Wv"/>
+            </connections>
+            <point key="canvasLocation" x="140.80000000000001" y="128.63568215892056"/>
+        </tableViewCell>
+    </objects>
+</document>

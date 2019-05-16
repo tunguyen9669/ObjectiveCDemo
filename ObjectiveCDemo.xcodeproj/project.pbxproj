@@ -20,6 +20,8 @@
 		8440E776228BA6A500B4140C /* ServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440E775228BA6A500B4140C /* ServiceProvider.m */; };
 		8440E77B228BA8EC00B4140C /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440E77A228BA8EC00B4140C /* TestModel.m */; };
 		845AED92228BCDF2005321DB /* JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 845AED91228BCDF2005321DB /* JsonModel.m */; };
+		84FEFCD1228CF74B004442C4 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEFCCF228CF74B004442C4 /* TableCell.m */; };
+		84FEFCD2228CF74B004442C4 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FEFCD0228CF74B004442C4 /* TableCell.xib */; };
 		C76CC9188F202CC6096E6DE6 /* libPods-ObjectiveCDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66280A89CB2E7AB8F11A0BCD /* libPods-ObjectiveCDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,9 @@
 		8440E77A228BA8EC00B4140C /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		8440E77D228BB68700B4140C /* JsonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonModel.h; sourceTree = "<group>"; };
 		845AED91228BCDF2005321DB /* JsonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonModel.m; sourceTree = "<group>"; };
+		84FEFCCE228CF74B004442C4 /* TableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
+		84FEFCCF228CF74B004442C4 /* TableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
+		84FEFCD0228CF74B004442C4 /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		8D2322F4D46C1550F80E5732 /* Pods-ObjectiveCDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCDemoUITests/Pods-ObjectiveCDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C505BE5658877D84FC0C4F64 /* Pods-ObjectiveCDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCDemoTests/Pods-ObjectiveCDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC47BE8E78C3B650EB17BDF3 /* Pods-ObjectiveCDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCDemoTests/Pods-ObjectiveCDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,14 +155,13 @@
 		8440E330228AA41C00B053E3 /* ObjectiveCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84FEFCCD228CF70C004442C4 /* UI */,
+				84FEFCCA228CF6E4004442C4 /* ViewController */,
 				8440E77C228BB57400B4140C /* JSONModel */,
 				8440E777228BA89600B4140C /* Model */,
 				8440E773228BA65400B4140C /* Service */,
 				8440E331228AA41C00B053E3 /* AppDelegate.h */,
 				8440E332228AA41C00B053E3 /* AppDelegate.m */,
-				8440E334228AA41C00B053E3 /* ViewController.h */,
-				8440E335228AA41C00B053E3 /* ViewController.m */,
-				8440E337228AA41C00B053E3 /* Main.storyboard */,
 				8440E33A228AA41E00B053E3 /* Assets.xcassets */,
 				8440E33C228AA41E00B053E3 /* LaunchScreen.storyboard */,
 				8440E33F228AA41E00B053E3 /* Info.plist */,
@@ -209,6 +213,42 @@
 				845AED91228BCDF2005321DB /* JsonModel.m */,
 			);
 			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		84FEFCCA228CF6E4004442C4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84FEFCCB228CF6EF004442C4 /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84FEFCCB228CF6EF004442C4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84FEFCCC228CF6FD004442C4 /* TableViewCell */,
+				8440E334228AA41C00B053E3 /* ViewController.h */,
+				8440E335228AA41C00B053E3 /* ViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84FEFCCC228CF6FD004442C4 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84FEFCCE228CF74B004442C4 /* TableCell.h */,
+				84FEFCCF228CF74B004442C4 /* TableCell.m */,
+				84FEFCD0228CF74B004442C4 /* TableCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		84FEFCCD228CF70C004442C4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8440E337228AA41C00B053E3 /* Main.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +359,7 @@
 			files = (
 				8440E33E228AA41E00B053E3 /* LaunchScreen.storyboard in Resources */,
 				8440E33B228AA41E00B053E3 /* Assets.xcassets in Resources */,
+				84FEFCD2228CF74B004442C4 /* TableCell.xib in Resources */,
 				8440E339228AA41C00B053E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +446,7 @@
 				8440E77B228BA8EC00B4140C /* TestModel.m in Sources */,
 				8440E336228AA41C00B053E3 /* ViewController.m in Sources */,
 				845AED92228BCDF2005321DB /* JsonModel.m in Sources */,
+				84FEFCD1228CF74B004442C4 /* TableCell.m in Sources */,
 				8440E341228AA41E00B053E3 /* main.m in Sources */,
 				8440E333228AA41C00B053E3 /* AppDelegate.m in Sources */,
 			);

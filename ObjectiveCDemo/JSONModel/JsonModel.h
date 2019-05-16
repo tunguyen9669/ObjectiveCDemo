@@ -16,8 +16,8 @@
 
 @interface JsonModel : JSONModel
 
-@property (assign, nonatomic) NSInteger id;
-@property (assign, nonatomic) NSInteger userId;
+@property (assign, nonatomic) NSNumber* id;
+@property (assign, nonatomic) NSNumber* userId;
 @property (copy, nonatomic) NSString* title;
 @property (copy, nonatomic) NSString* body;
 
